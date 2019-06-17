@@ -54,6 +54,9 @@ navBar[5].textContent = siteContent.nav['nav-item-6'];
 //=== .cta and .cta-text section of the html markup.
 const header_text = document.querySelector('.cta-text h1'); 
 header_text.textContent = siteContent.cta['h1'];
+header_text.style.width = '150px';
+header_text.style.marginRight = '80px';
+
 
 const header_button = document.querySelector('.cta-text button');
 header_button.textContent = siteContent.cta['button'];
