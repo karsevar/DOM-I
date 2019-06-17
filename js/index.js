@@ -97,6 +97,11 @@ contact_paragraphs[0].textContent = siteContent['contact']['address'];
 contact_paragraphs[1].textContent = siteContent['contact']['phone'];
 contact_paragraphs[2].textContent = siteContent['contact']['email'];
 
+//footer p
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
+
+
 
 
 
