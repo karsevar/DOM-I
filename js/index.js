@@ -61,5 +61,42 @@ header_button.textContent = siteContent.cta['button'];
 const header_img = document.querySelector('.cta img')
 header_img.src = siteContent.cta['img-src'];
 
+//=== img class middle-img
+const middle_img = document.querySelector('.middle-img');
+middle_img.src = siteContent['main-content']['middle-img-src'];
+
+//=== section classname main-content top-content h4
+const main_top_header = document.querySelectorAll('.top-content .text-content h4');
+main_top_header[0].textContent = siteContent['main-content']['features-h4'];
+main_top_header[1].textContent = siteContent['main-content']['about-h4'];
+
+//=== section classname main-content topcontent p
+const main_top_paragraphs = document.querySelectorAll('.top-content .text-content p');
+main_top_paragraphs[0].textContent = siteContent['main-content']['features-content'];
+main_top_paragraphs[1].textContent = siteContent['main-content']['about-content'];
+
+//=== div classname bottom-content text-content h4
+const main_bottom_header = document.querySelectorAll('.bottom-content .text-content h4');
+main_bottom_header[0].textContent = siteContent['main-content']['services-h4'];
+main_bottom_header[1].textContent = siteContent['main-content']['product-h4'];
+main_bottom_header[2].textContent = siteContent['main-content']['vision-h4'];
+
+//=== div classname bottom-content text-content p
+const main_bottom_paragraphs = document.querySelectorAll('.bottom-content .text-content p');
+main_bottom_paragraphs[0].textContent = siteContent['main-content']['services-content'];
+main_bottom_paragraphs[1].textContent = siteContent['main-content']['product-content'];
+main_bottom_paragraphs[2].textContent = siteContent['main-content']['vision-content'];
+
+//=== section classname contact h4
+const contact_header = document.querySelector('.contact h4');
+contact_header.textContent = siteContent.contact['contact-h4'];
+
+//=== section contact p
+const contact_paragraphs = document.querySelectorAll('.contact p');
+contact_paragraphs[0].textContent = siteContent['contact']['address'];
+contact_paragraphs[1].textContent = siteContent['contact']['phone'];
+contact_paragraphs[2].textContent = siteContent['contact']['email'];
+
+
 
 
