@@ -105,6 +105,22 @@ footer.textContent = siteContent['footer']['copyright'];
 const navBarTexts = document.querySelectorAll('header nav a');
 navBarTexts.forEach(navBarText => navBarText.style.color = 'green');
 
+//=== Adding new elements at the beginning and end of navbar:
+const navParent = document.querySelector('.container nav');
+const firstNav = document.createElement('a');
+firstNav.textContent = 'Home';
+firstNav.href = '#';
+firstNav.style.color = 'green';
+navParent.prepend(firstNav);
+
+const lastNav = document.createElement('a');
+lastNav.textContent = 'Demo';
+lastNav.href = '#';
+lastNav.style.color = 'green';
+navParent.appendChild(lastNav);
+
+
+
 
 
 
