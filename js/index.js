@@ -41,6 +41,25 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-// Updating the navigation bar with the anchor fields:
+//=== Updating the navigation bar with the anchor fields:
 const navBar = document.querySelectorAll('a');
-console.log(navBar);
+navBar[0].textContent = siteContent.nav['nav-item-1'];
+navBar[1].textContent = siteContent.nav['nav-item-2'];
+navBar[2].textContent = siteContent.nav['nav-item-3'];
+navBar[3].textContent = siteContent.nav['nav-item-4'];
+navBar[4].textContent = siteContent.nav['nav-item-5'];
+navBar[5].textContent = siteContent.nav['nav-item-6'];
+// Not the best solution but the nav bar has been populated.
+
+//=== .cta and .cta-text section of the html markup.
+const header_text = document.querySelector('.cta-text h1'); 
+header_text.textContent = siteContent.cta['h1'];
+
+const header_button = document.querySelector('.cta-text button');
+header_button.textContent = siteContent.cta['button'];
+
+const header_img = document.querySelector('.cta img')
+header_img.src = siteContent.cta['img-src'];
+
+
+
