@@ -39,4 +39,8 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// Updating the navigation bar with the anchor fields:
+const navBar = document.querySelectorAll('a');
+console.log(navBar);
