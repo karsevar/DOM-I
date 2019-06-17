@@ -101,6 +101,10 @@ contact_paragraphs[2].textContent = siteContent['contact']['email'];
 const footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
 
+//=== Changing navigation text to green:
+const navBarTexts = document.querySelectorAll('header nav a');
+navBarTexts.forEach(navBarText => navBarText.style.color = 'green');
+
 
 
 
